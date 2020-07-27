@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jat-app"
+    }
+  },
+  "defaultProject": "jat-app",
+  "cli": {
+    "analytics": false
+  }
 }

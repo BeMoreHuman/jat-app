@@ -1,0 +1,52 @@
+.table {
+  margin-top: 40px;
+  border-collapse: collapse;
+
+  // neumorphism effect
+  padding: 25px 40px;
+  background: #cadde8;
+  border-radius: 20px;
+  box-shadow:
+    5px 5px 10px #aabac3,
+    -5px -5px 10px #eaffff;
+
+  &__row {
+    &--body {
+      cursor: pointer;
+      border-top: 1px solid #001f3f;
+      &:hover {
+        background: #aabac3;
+      }
+    }
+  }
+  &__head {
+    padding: 20px 30px;
+    text-align: left;
+  }
+  &__cell {
+    padding: 20px 30px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 25px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      background: #1b1b1b;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .table {
+    &__head,
+    &__cell {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  .xs-hide {
+    display: none;
+  }
+}

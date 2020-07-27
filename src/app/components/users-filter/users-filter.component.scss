@@ -1,0 +1,54 @@
+.users-filter {
+  padding: 20px 0;
+  &__slider {
+    // neumorphism effect
+    padding: 25px 40px;
+    background: #cadde8;
+    border-radius: 20px;
+    box-shadow:
+      5px 5px 10px #aabac3,
+      -5px -5px 10px #eaffff;
+  }
+  &__row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #001f3f;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    label {
+      flex-shrink: 0;
+      padding-right: 20px;
+    }
+    input {
+      position: relative;
+      flex-grow: 1;
+    }
+  }
+  &__min-max {
+    margin-right: 20px;
+    font-weight: 900;
+    &:last-child {
+      margin-right: 0;
+    }
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+@import "../../../styles/input-range";
+
+@media all and (max-width: 480px) {
+  .users-filter {
+    &__row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__min-max {
+      margin-right: 0;
+    }
+  }
+}

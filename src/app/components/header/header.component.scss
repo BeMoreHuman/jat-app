@@ -1,0 +1,21 @@
+.header {
+  //box-shadow: inset 5px 5px 10px #aabac3,
+  //inset -5px -5px 10px #eaffff;
+  &__wrp {
+    // neumorphism effect
+    padding: 25px 40px;
+    background: #cadde8;
+    border-radius: 20px;
+    box-shadow:
+      5px 5px 10px #aabac3,
+      -5px -5px 10px #eaffff;
+  }
+  &__logo {
+    font-size: 32px;
+    font-weight: 900;
+  }
+}
+
+.logo {
+
+}

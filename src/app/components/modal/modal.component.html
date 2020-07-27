@@ -1,0 +1,26 @@
+<div class="modal">
+  <div class="modal__wrp">
+    <button class="modal__close" (click)="close()">x</button>
+    <div class="modal__content user">
+      <div class="user__avatar">
+        <img *ngIf="modalService.user?.image_url"
+             [src]="modalService.user.image_url"
+             alt="user avatar" class="user__avatar-img">
+      </div>
+      <div class="user__info">
+        <div class="user__row">
+          <p class="user__label">Name:</p>
+          <p class="user__data">{{modalService.user?.name}}</p>
+        </div>
+        <div class="user__row">
+          <p class="user__label">Last name:</p>
+          <p class="user__data">{{modalService.user?.last_name}}</p>
+        </div>
+        <div class="user__row">
+          <p class="user__label">Age:</p>
+          <p class="user__data">{{modalService.user?.age}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

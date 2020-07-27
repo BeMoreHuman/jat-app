@@ -1,0 +1,18 @@
+<div class="users-filter">
+  <div class="users-filter__slider">
+    <div class="users-filter__row">
+      <label for="size">Number of rows:</label>
+      <input id="size" type="range" [disabled]="userService.isLoadingData$ | async"
+             (change)="rangeHandler($event)"
+             [value]="userService.usersCount" step="1"
+             [min]="userService.MIN_NUM_OF_ROWS"
+             [max]="userService.MAX_NUM_OF_ROWS">
+    </div>
+    <div class="users-filter__row">
+      <div class="users-filter__min-max"><span>Min:</span> {{userService.MIN_NUM_OF_ROWS}}</div>
+      <div class="users-filter__min-max"><span>Max:</span> {{userService.MAX_NUM_OF_ROWS}}</div>
+      <div class="users-filter__min-max"><span>Current value:</span> {{userService.usersCount}}</div>
+      <div class="users-filter__min-max"><span>Update time:</span> {{(userService.REFRESH_TIMEOUT / 1000) + 'sec'}}</div>
+    </div>
+  </div>
+</div>
