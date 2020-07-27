@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UsersFilterComponent } from './users-filter.component';
-import {HttpClientModule} from "@angular/common/http";
-import {UserService} from "../../services/user/user.service";
+import {HttpClientModule} from '@angular/common/http';
+import {UserService} from '../../services/user/user.service';
 
 describe('UsersFilterComponent', () => {
   let component: UsersFilterComponent;
